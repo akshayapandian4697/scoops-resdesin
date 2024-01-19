@@ -1,0 +1,350 @@
+body {
+    background: #000000;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h2 {
+    font-family: 'Ink Free', Georgia, 'Times New Roman', Times, serif;
+    color: rgb(240, 91, 91);
+    font-size: 30px;
+    padding-left: 2%;
+}
+
+.header p {
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
+    font-size: 20px;
+    padding-right: 2%;
+}
+
+.hero {
+    background-image: url("./imgs/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 500px;
+}
+
+.hero p {
+    color: rgb(196, 191, 191);
+    font-size: 30px;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#buttonwrap{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+#blogbutton{
+    background-color:rgb(108, 60, 25) ;
+    border: none;
+    color: wheat;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 9px 28px; 
+    border-radius: 10px;
+}
+
+.content h3, aside h3{
+    text-align: center;
+    color: wheat;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#multicol{
+    display : flex;
+    /* flex-wrap: wrap; */
+    overflow: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.item25{
+    text-align: center;
+}
+
+#multicol h3{
+    text-decoration: none;
+}
+
+.menuitems{
+    height: 180px;
+    width: 180px;
+}
+  
+.sidebar {
+    color: rgb(196, 191, 191);
+    background-color: #000000;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+form{
+    width: 100%;
+    padding: 40px 0px 20px 40px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap : 8px;
+}
+
+label + *{
+    margin-bottom: 15px;
+}
+
+input[type=submit]{
+    justify-self: start;
+    background-color:rgb(108, 60, 25) ;
+    border: none;
+    color: wheat;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 9px 28px; 
+    border-radius: 10px;
+}
+
+input[type="date"], input[type="time"], input[type="number"], input[type="text"] {
+    width: 300px;
+    height: 30px;
+}
+
+textarea {
+    width: 400px;
+    height: 60px;
+}
+
+label{
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.footer{
+    color: rgb(196, 191, 191);
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+}
+  
+#flex_container {
+    display : flex;
+    flex-wrap : wrap; 
+}
+  
+.item, .offers{
+    display: block;
+    flex-grow : 1;
+    padding-left: 2%;
+}
+  
+#copyright {
+    text-align: center;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 100%;
+    font-size: 10px;
+}
+  
+footer h4{
+    color: wheat;
+   padding-bottom: 10px;
+}
+  
+#footbutton{
+    background-color: #d1a25b; 
+    border: none;
+    color: rgb(95, 50, 17);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 7px 18px; 
+    border-radius: 10px;
+}
+
+/* Desktop View */
+@media only screen and (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    } 
+
+    .flex-container-wrapper {
+        padding: 0% 7% 0% 7%;
+    }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .flex-container-wrapper {
+        padding: 0% 0% 0% 0%;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    } 
+
+    input[type="date"], input[type="time"], input[type="number"], input[type="text"] {
+        width: 180px;
+        height: 30px;
+    }
+    
+    textarea {
+        width: 200px;
+        height: 60px;
+    }
+    
+    label{
+        font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    footer{
+        margin: 0;
+    }
+    
+    footer div{
+        width: 100%;
+    }
+    
+    .item, .offers{
+        float: none;
+        text-align: center;
+    }
+    
+    .item ul li{
+        list-style: none;
+    }
+
+    .footerbutton {
+        width: 900px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile View */
+@media only all and (max-width: 767px) {
+    .desktop{
+      display: none;
+    }
+
+    .hero {
+        background-image: url("./imgs/banner.jpeg");
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .hero p {
+        color: rgb(196, 191, 191);
+        font-size: 18px;
+        font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 1px;
+    }
+
+    input[type="date"], input[type="time"], input[type="number"], input[type="text"] {
+        width: 180px;
+        height: 30px;
+    }
+    
+    textarea {
+        width: 200px;
+        height: 60px;
+    }
+    
+    label{
+        font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    footer{
+        margin: 0;
+    }
+    
+    footer div{
+        width: 100%;
+    }
+    
+    .item, .offers{
+        float: none;
+        text-align: center;
+    }
+    
+    .item ul li{
+        list-style: none;
+    }
+
+    .footerbutton {
+        width: 450px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*main, header, section, aside, footer {
+    margin: 0;
+
+}
+
+main {
+    background: #000000;
+}
+
+.header {
+    background: #03a9f4;
+}
+
+.hero {
+    background: #d22b1f;
+}
+
+.content {
+    background: #129a22;
+}
+
+.sidebar {
+    border: 1px solid #000000;
+    background: #673ab7;
+}
+
+.footer {
+    border: 1px solid #000000;
+    background: #616161;
+}*/

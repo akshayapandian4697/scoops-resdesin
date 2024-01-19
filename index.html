@@ -1,0 +1,130 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+     <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Header -->
+            <header class="header">
+                <h2>Fantasy Scoop Icecreams</h2>
+                <p>Melted Memories! Taste It, Experience It!</p>
+            </header>
+            <hr>
+            <div class="flex-container-wrapper">
+
+                <!-- Hero -->
+                <section class="hero">
+                    <p>Discover your ice cream destination, Every scoop tells a story! Exquisite ice creams with exotic ingredients! Crafted for gifting! 
+                        Premium Ice Cream. Unlimited Mixins. Handrolled Cones. 100% Real Canadian Dairy. Made Fresh. In Store!</p>
+                    <div id = "buttonwrap"><button id="blogbutton">View Blog</button></div>
+                </section>
+
+                <!-- Content -->
+                <div class="grid">
+                    <section class="content">
+                        <h3>Menu</h3>
+                        <div id="multicol">
+                            <section class="item25">
+                                <img id=coffeeicon1 class = "menuitems" src="./imgs/icecreams.jpg" alt="Icecreams">
+                                <h3>Icecreams</h3>
+                            </section>
+            
+                            <section class="item25">
+                                <img id=coffeeicon2 class = "menuitems" src="./imgs/cakes.jpg" alt="Icecream Cakes">
+                                <h3>Icecream Cakes</h3>
+                            </section>
+                        </div>
+                        <div id="multicol">
+                            <section class="item25">
+                                <img id=coffeeicon3 class = "menuitems" src="./imgs/milkshakes.jpg" alt="Milkshakes">
+                                <h3>Milkshakes</h3>
+                            </section>
+            
+                            <section class="item25">
+                                <img id=coffeeicon4 class = "menuitems" src="./imgs/coldbrews.jpg" alt="Cold Brews">
+                                <h3>cold Brews</h3>
+                            </section>
+                        </div>
+
+                    </section>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <div id="bookingtab">
+                            <h3>Reserve a table now!</h3>
+                            <form>
+                                <label for="name">Name:</label>
+                                <input type="text" id = "name" name="name" size="20" placeholder="Booking Name">
+
+                                <label for="date">Date:</label>
+                                <input type="date" id = "dateenter" name="date" size="20" placeholder="Preferred Date">
+            
+                                <label for="time">Time:</label>
+                                <input type="time" id = "timeenter" name="time" size="20" placeholder="Preferred Time">
+            
+                                <label for="guest">Number of Guests:</label>
+                                <input type="number" id = "guest" name="guest" size="20" placeholder="Number of Guests">
+            
+                                <label for="interest">Events:</label>
+                                <div>
+                                    <input type="radio" name="preference" value="Birthday"> <label for="Birthday">Birthday</label><br>
+                                    <input type="radio" name="preference" value="Anniversary"> <label for="Anniversary">Anniversary</label><br>
+                                    <input type="radio" name="preference" value="Graduation"> <label for="Graduation">Graduation</label><br>
+                                    <input type="radio" name="preference" value="Party"> <label for="party">Party</label>
+                                </div>
+            
+                                <label for="comments">Special Instructions, If any:</label>
+                                <textarea name="comments" id = "commentsenter" cols="50" rows="3"> </textarea>
+            
+                                <label for="submit"></label>
+                                <input type="submit" value="Book Now"/>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <hr>
+                <div id="flex_container">
+                    <div class="item">
+                        <h4>Open Hours</h4>
+                        <ul>
+                            <li>Monday to Thursday: 9.00 AM - 10.00 PM </li>
+                            <li>Friday and Saturday: 9.00 AM - 02.00 AM </li>
+                            <li>Sunday: 09.00 AM - 11.00 PM </li>
+                        </ul>
+                    </div>
+            
+                    <div class="item">
+                        <h4>Store Locator</h4>
+                        <p>
+                            Fantasy Scoop Icecreams,
+                            299 Doon Valley,
+                            Kitchener, Ontario </p>
+                            Email to: fantasy_scoop_icecreams@gmail.com
+                    </div>
+            
+                    <div class="offers">
+                        <h4>Get notifications on special offers!</h4>
+                        <input type="text" name="mail" size="20" placeholder="Enter your E-Mail Address">
+                        <div class = "footerbutton"><button id="footbutton">Subscribe</button></div>
+                    </div>
+            
+                    <p id="copyright">
+                        Copyright &copy; Fantasy Scoop Icecreams, Canada
+                    </p>
+                    </div>
+            </footer>
+
+        </main>
+
+    </body>
+</html>
